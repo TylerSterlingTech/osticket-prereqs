@@ -6,10 +6,6 @@
 This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
 
 
-<h2>Video Demonstration</h2>
-
-- ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
-
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
@@ -20,13 +16,6 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 - Windows 10</b> (21H2)
 
-<h2>List of Prerequisites</h2>
-
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
 
 <h2>Installation Steps</h2>
 
@@ -34,7 +23,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <img src="https://i.imgur.com/VaJKvYe.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-The first step in the process of setting up the osTicket ticketing system is to utilize Microsoft Azure to create a secure lab environment. This picture shows the creation of an Azure virtual machine. A resource group was created along with the virtual machine: VM-OSTICKET. A virtual network (Vnet) was also created in this process.
+The first step in the process of setting up the osTicket ticketing system is to utilize Microsoft Azure to create a secure lab environment. This picture shows the creation of an Azure virtual machine. A resource group was created along with the virtual machine "VM-OSTICKET". A virtual network (Vnet) was also created in this process.
 </p>
 <br />
 
@@ -42,7 +31,7 @@ The first step in the process of setting up the osTicket ticketing system is to 
 <img src="https://i.imgur.com/dijEsv0.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-In order to connect to the virtual machine, a Remote Desktop Connection will need to be established using the public IP address of the virtual machine (20.172.246.188).
+To connect to the virtual machine, a Remote Desktop Connection was established using the public IP address of the virtual machine (20.172.246.188).
 </p>
 <br />
 
@@ -106,7 +95,7 @@ IIS was opened as an Administrator.
 <img src="https://i.imgur.com/l9k0y1N.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-c:\PHP\php-cgi.exe (PHP) was registered within IIS.
+C:\PHP\php-cgi.exe (PHP) was registered within IIS.
 </p>
 <br />
 
@@ -114,7 +103,7 @@ c:\PHP\php-cgi.exe (PHP) was registered within IIS.
 <img src="https://i.imgur.com/RajKHWv.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-After downloading osTicket, this picture shows the upload folder being extracted and copied to c:\inetpub\wwwroot.
+After downloading osTicket, this picture shows the upload folder being extracted and copied to C:\inetpub\wwwroot.
 </p>
 <br />
 
@@ -130,7 +119,7 @@ The upload file was renamed to osTicket.
 <img src="https://i.imgur.com/SrWMEEq.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-After reloading IIS, this process was followed: Sites --> Default --> osTicket. On the right of the picture, Browse *:80 was selected, leading to the osTicket Installer.
+After reloading IIS, this process was followed: Sites --> Default --> osTicket. On the right of the picture, "Browse *:80" was selected, leading to the osTicket Installer.
 </p>
 <br />
 
@@ -138,7 +127,7 @@ After reloading IIS, this process was followed: Sites --> Default --> osTicket. 
 <img src="https://i.imgur.com/KZxfy8S.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-The osTicket Installer page is displayed, yet not all of the proper extensions have been enabled yet. 
+The osTicket Installer page is displayed, yet not all of the proper extensions have been enabled.
 </p>
 <br />
 
@@ -162,7 +151,7 @@ The osTicket Installer page now displayed the proper extensions.
 <img src="https://i.imgur.com/D0oncUh.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Within the file ost-config.php, the inheritance was disabled and the permissions were set for everyone to be able to have full control, modify, read & execute, read, and write.
+Within the file "ost-config.php", the inheritance was disabled and the permissions were set for everyone to have full control, modify, read & execute, read, and write permissions.
 </p>
 <br />
 
@@ -186,7 +175,7 @@ Heidi SQL was installed.
 <img src="https://i.imgur.com/Lx6E3ho.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Within HeidiSQL, a new session was created with the username and password were set.
+Within Heidi SQL, a new session was created with the username and password were set.
 </p>
 <br />
 
